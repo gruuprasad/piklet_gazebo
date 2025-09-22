@@ -1,0 +1,53 @@
+# ========================
+# ROS Workspace Ignores
+# ========================
+
+# Catkin (ROS 1) build and development artifacts
+/build/
+/devel/
+/install/
+/logs/
+/msg_gen/
+/srv_gen/
+/gennodejs/
+/geneus/
+/genlisp/
+/gencpp/
+/gencs/
+
+# Colcon (ROS 2) build artifacts
+/build/
+/install/
+/log/
+
+# CMake & Make
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Package-specific generated files
+*.pyc
+__pycache__/
+*.egg-info/
+*.swp
+
+# IDE & editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary
+*.log
+*.bak
+*.tmp
+
+# Environment & config
+.env
+.rosinstall
+rosdep.yaml
