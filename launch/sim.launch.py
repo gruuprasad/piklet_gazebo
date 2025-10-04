@@ -8,13 +8,14 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, Command, PathJoinSubstitution
 from launch_ros.actions import Node
 
+xacro_file_name = "piklet_m1/piklet_robot.urdf.xacro"
 
 def generate_launch_description():
     pkg_name = 'piklet_description'
     pkg_share = get_package_share_directory(pkg_name)
 
     # Xacro and RViz config
-    robot_xacro = PathJoinSubstitution([pkg_share, 'urdf', 'piklet_robot.urdf.xacro'])
+    robot_xacro = PathJoinSubstitution([pkg_share, 'urdf', xacro_file_name])
     rviz_config = PathJoinSubstitution([pkg_share, 'rviz', 'display_gazebo.rviz'])
 
     # Launch arguments

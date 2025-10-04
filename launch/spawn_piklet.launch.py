@@ -5,6 +5,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 
+xacro_file_name = "piklet_m1/piklet_robot.urdf.xacro"
 
 def generate_launch_description():
     # Paths
@@ -13,7 +14,7 @@ def generate_launch_description():
     # Robot description from xacro
     robot_description_content = Command([
         "xacro ",
-        PathJoinSubstitution([pkg_share, "urdf", "piklet_robot.urdf.xacro"])
+        PathJoinSubstitution([pkg_share, "urdf", xacro_file_name])
     ])
     robot_description = {"robot_description": robot_description_content}
 

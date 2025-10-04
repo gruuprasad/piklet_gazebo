@@ -3,6 +3,7 @@
 # ========================
 
 # Catkin (ROS 1) build and development artifacts
+/models
 /build/
 /devel/
 /install/
